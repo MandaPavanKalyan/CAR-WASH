@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carwash</title>
+   <LINK rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+   <h1>Carwash</h1>
+   <div class="menu">
+       <a href="home.html">Home</a>
+       <a href="about.html">About Us</a>
+       <a href="admin.html">Admin</a>
+       <a href="customer.html">Customer</a>
+       <a href="contact.html">Contact</a>
+   </div>
+   <h4> We'd love to hear from You </h4>
+         <!-- Contact Us Section -->
+         <section class="p-12 bg-gray-800 text-white fade-up" id="Contact Us">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Contact Us</h2>
+                <div class="max-w-lg mx-auto bg-gray-700 p-8 rounded-lg shadow-lg">
+                    <form action="https://formspree.io/f/xovayykk" method="POST" class="space-y-6">
+                        <!-- Name Field -->
+                        <div>
+                            <label for="name" class="block text-lg font-medium text-gray-300">Name</label>
+                            <input type="text" id="name" name="name" required
+                                   class="mt-1 block w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <!-- Email Field -->
+                        <div>
+                            <label for="email" class="block text-lg font-medium text-gray-300">Email</label>
+                            <input type="email" id="email" name="_replyto" required
+                                   class="mt-1 block w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <!-- Phone Number Field -->
+                        <div>
+                            <label for="phone" class="block text-lg font-medium text-gray-300">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required
+                                   class="mt-1 block w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit"
+                                    class="w-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-300 ease-in-out">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "wLSSzvDIZm3gwYb2Yha3e",
+            domain: "www.chatbase.co"
+            }
+            </script>
+            <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="wLSSzvDIZm3gwYb2Yha3e"
+            domain="www.chatbase.co"
+            defer>
+            </script>
+</body>
+</html>

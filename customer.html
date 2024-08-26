@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carwash</title>
+   <LINK rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+   <h1>Carwash</h1>
+   <div class="menu">
+       <a href="home.html">Home</a>
+       <a href="about.html">About Us</a>
+       <a href="admin.html">Admin</a>
+       <a href="customer.html">Customer</a>
+       <a href="contact.html">Contact</a>
+   </div>
+   <div id="customer-section">
+       <h2>Customer Registration</h2>
+       <input type="text" id="customer-name" placeholder="Name">
+       <input type="text" id="customer-phone" placeholder="Phone Number">
+       <input type="text" id="customer-place" placeholder="Place">
+       <input type="text" id="customer-aadhaar" placeholder="Aadhaar Number">
+       <button onclick="registerCustomer()">Register</button>
+
+
+
+
+       <h2>Request Appointment</h2>
+       <input type="date" id="appointment-date">
+       <input type="time" id="appointment-time">
+       <select id="service-type" placeholder="Select Option">
+           <option value="1">Internal Wash</option>
+           <option value="2">External Wash</option>
+           <option value="3">Comprehensive Wash</option>
+       </select>
+       <button onclick="requestAppointment()">Request Appointment</button>
+   </div>
+   <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "wLSSzvDIZm3gwYb2Yha3e",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="wLSSzvDIZm3gwYb2Yha3e"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+
+</body>
+</html>

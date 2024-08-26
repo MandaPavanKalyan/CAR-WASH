@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        input[type="text"], input[type="password"], input[type="submit"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid white;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+        }
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login form" action="login.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    const username = document.getElementById('name').value;
+    const password = document.getElementById('password').value;
+
+    // Simple authentication check (replace with your logic)
+    if (name === 'name' && password === 'password') {
+        // Redirect to dashboard
+        window.location.href = 'home.html'; // Replace with your dashboard page
+    } else {
+        alert('Invalid username or password');
+    }
+});
+
+    </script>
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "wLSSzvDIZm3gwYb2Yha3e",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="wLSSzvDIZm3gwYb2Yha3e"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+</body>
+</html>

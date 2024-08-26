@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        input[type="text"], input[type="password"], input[type="submit"], a.login-button {
+            width: 95%;
+            align: center;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid white;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: gray;
+        }
+        a.login-button {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+        a.login-button:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="register.php" method="POST" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <!-- Login Button -->
+        <a href="login.html" class="login-button">Already have an account? Login here</a>
+    </div>
+
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm_password").value;
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "wLSSzvDIZm3gwYb2Yha3e",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="wLSSzvDIZm3gwYb2Yha3e"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+</body>
+</html>
